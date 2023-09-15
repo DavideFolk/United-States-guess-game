@@ -2,8 +2,6 @@
 
 Simple game made in Python
 
-Extra command:
-
-Quit
-
+Extra command:  
+Quit  
 Solution -- Write all the state
