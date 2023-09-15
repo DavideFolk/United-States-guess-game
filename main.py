@@ -34,6 +34,17 @@ while len(guessed_states) < 50:
 
         break
 
+    if answer_state == 'Solution':
+        for state in states_list:
+            t = turtle.Turtle()
+            t.hideturtle()
+            t.up()
+            state_data = data[data.state == state]
+            t.goto(int(state_data.x), int(state_data.y))
+            t.write(state)
+
+        screen.exitonclick()
+
     if answer_state in states_list:
         guessed_states.append(answer_state)
         t = turtle.Turtle()
